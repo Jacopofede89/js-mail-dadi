@@ -1,0 +1,1 @@
+const mail = prompt("Qual è la tua email?");
