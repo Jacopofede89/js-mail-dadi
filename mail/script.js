@@ -1,11 +1,12 @@
+const info = document.getElementById("msg");
 const mail = prompt("Qual è la tua email?");
-const myMail = 'jacopo@gmail.com';
-const list = ['jacopo@gmail.com', 'fede@gmail.com' , 'gino@gmail.com', 'marco@gmail.com'];
+// const myMail = "jacopo@gmail.com";
+const list = ["jacopo@gmail.com", "jaco@gmail.com" , "gino@gmail.com", "marco@gmail.com"];
 
 let emailList = false;
-for(let i = 0; i < list; i++) {
-    console.log(i); 
-    if (myMail === list[i]) {
+for(let i = 0; i < list.length; i++) {
+    
+    if (mail === list[i]) {
         emailList = true;
     }
     
@@ -13,6 +14,6 @@ for(let i = 0; i < list; i++) {
 
 if (emailList === true) {
   console.log('Email trovata');
-} else {
+} else  {
   console.log('Email non trovata');
-}
+};
