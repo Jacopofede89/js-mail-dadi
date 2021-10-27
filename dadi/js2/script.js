@@ -1,5 +1,30 @@
-let user = parseInt(prompt("Scegli un numero da 1 a 6"))
+const user = document.getElementById("user");
+const pc = document.getElementById("pc");
+const btn = document.getElementById("btn");
 
-for(let i = 0; i < user; i++){
-    let num = Math.floor(Math.random()* 6) +1;
+// const rUser = 
+
+
+const userA = Math.floor(Math.random()* 6) +1;
+console.log(userA);
+const pcA = Math.floor(Math.random()* 6) +1;
+console.log(pcA);
+
+
+btn.addEventListener("click",
+
+function(){
+if (userA > pcA){
+    user.innerHTML= "Hai vinto"
 }
+else if (userA < pcA){
+    user.innerHTML= "Hai perso"
+}
+else if (userA == pcA){
+    user.innerHTML= "Hai pareggiato"
+}
+}
+)
+
+
+
